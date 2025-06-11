@@ -14,4 +14,9 @@ with col2:
     Programmer. Real Estate Investor. Traveler. Foodie. Fun \n
     Scala, Python, PHP. 
     """
-    st.write(content)
+    st.info(content)
+
+content2 = """
+Below you can find some of the apps I've built in Python. Feel free to contact me!
+"""
+st.write(content2)
