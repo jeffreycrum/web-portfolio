@@ -30,12 +30,12 @@ with col3:
     for index, row in df[:half_df].iterrows():
         st.header(row['title'])
         st.write(row['description'])
-        st.link_button(label=f"Github:{row['title']}", url=row['url'])
-        st.image(f"images/{row['image']}")
+        st.write(f"[Source Code: {row['title']}]({row['url']})")
+        st.image(f"images/" + row['image'])
 
 with col4:
     for index, row in df[half_df:].iterrows():
         st.header(row['title'])
         st.write(row['description'])
-        st.link_button(label=f"Github:{row['title']}", url=row['url'])
-        st.image(f"images/{row['image']}")
+        st.write(f"[Source Code: {row['title']}]({row['url']})")
+        st.image(f"images/" + row['image'])
